@@ -1,0 +1,13 @@
+# Virtual environment
+.venv/
+
+# Bytecode and caches
+__pycache__/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# macOS system files
+.DS_Store

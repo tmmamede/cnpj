@@ -1,0 +1,26 @@
+[project]
+name = "cnpj"
+version = "0.1.0"
+description = "CLI tool to query Brazilian CNPJs from minhareceita.org"
+authors = [
+    { name = "Thiago Mamede", email = "thiago.mamede@outlook.com.br" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+    "requests"
+]
+
+[project.scripts]
+cnpj = "cnpj.cli:run_cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
